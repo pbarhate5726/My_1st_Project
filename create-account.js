@@ -21,6 +21,15 @@ document.getElementById('createAccountForm').addEventListener('submit', function
         return;
     }
 
+     // Log the data (you can replace this with an actual API call to your server)
+     console.log('Account Created!');
+     console.log(`Username: ${username}`);
+     console.log(`Email: ${email}`);
+     console.log(`Password: ${password}`);
+
+     // Optional: Reset the form after submission
+    document.getElementById('createAccountForm').reset()
+
     // Simulate account creation (this is where you'd typically call an API or backend to create the user)
     alert('Account created successfully!');
     
